@@ -16,6 +16,11 @@ $(document).ready(function() {
 			return false;
 		}
 
+		// (h/d) / w = x
+		// h = wxd 
+		var pegContainer = $('#pegcontainer');
+		pegContainer.height(Math.min(pegContainer.height(), pegContainer.width() * input_number * 0.075));
+
 		window.pegs = createPegs(
 			/*  pegCount = */ 3,
 			/* diskCount = */ input_number);
