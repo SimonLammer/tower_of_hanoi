@@ -29,6 +29,10 @@ $(document).ready(function() {
 
 		swal("Good luck!", inputValue + " disks have been generated for you.", "info");
 
+		$('#btn_reset').click(function() {
+			window.location = '';
+		});
+
 		$('#btn_solve').click(function() {
 			if (!this.hasBeenClicked) {
 				this.hasBeenClicked = true;
